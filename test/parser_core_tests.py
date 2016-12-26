@@ -1,3 +1,6 @@
+import os
+os.chdir("..")
+
 # automated tests for parser_core.py
 
 from nose.tools import *
