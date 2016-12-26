@@ -12,6 +12,6 @@ from clan_parser import *
 def test_clanParser():
     cp = ClanParser(129)
     assert_equals(cp.URL, "https://www.warlight.net/Clans/?ID=129")
-    testLoc = "data/corpdata.html"
+    testLoc = "test/data/corpdata.html"
     with open(testLoc, "rt") as fin:
         testData = fin.read()
