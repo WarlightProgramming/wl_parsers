@@ -1,5 +1,5 @@
-import os
-os.chdir("..")
+import sys
+sys.path.append("..")
 
 # automated tests for parser_core.py
 

@@ -1,5 +1,10 @@
-import os
-os.chdir("..")
+import sys
+sys.path.append("..")
+
+# global - preserved CORP data for testing
+testLoc = "test/data/corpdata.html"
+with open(testLoc, "rt") as fin:
+    testData = fin.read()
 
 # automated tests for clan_parser.py
 
@@ -11,4 +16,4 @@ from clan_parser import *
 ## tests constructor
 def test_clanParser():
     cp = ClanParser(129)
-    assert_equals(cp.URL, "https://www.warlight.net/Clans?ID=129")
+    assert_equals(cp.URL, "https://www.warlight.net/Clans/?ID=129")
