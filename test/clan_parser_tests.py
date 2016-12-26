@@ -31,5 +31,10 @@ def test_parserTools():
     assert ("Roleplayers of all kinds." in cp.getBio())
     assert ((8246332261, "Prabster Realm", "Account Guardian", False) in cp.getMembers())
 
+## test clan retrieval
+def test_getClans():
+    assert (257 in getClans())
+    assert (999 not in getClans())
+
 if __name__ == "__main__":
     test_parserTools()
