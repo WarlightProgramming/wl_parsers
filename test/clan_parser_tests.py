@@ -1,6 +1,8 @@
 import sys
 sys.path.append("..")
-import os
+
+import requests
+requests.packages.urllib3.disable_warnings()
 
 # automated tests for clan_parser.py
 

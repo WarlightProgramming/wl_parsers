@@ -50,7 +50,7 @@ class PlayerParser(WLParser):
         if marker not in page: return ""
         return self.getValueFromBetween(page, marker, end)
 
-    ## getClanname
+    ## getClanName
     ### returns name (string) of player's clan
     @getPageData
     def getClanName(self):
